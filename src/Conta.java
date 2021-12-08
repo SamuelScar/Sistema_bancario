@@ -6,11 +6,14 @@ public class Conta {
     private String tipo;
     public ArrayList<TransacaoRemota> transacoesRemotas;
     public Cartao cartao;
+    public Cliente cliente;
+    public Banco banco;
 
     public Conta(){
 
         transacoesRemotas = new ArrayList<TransacaoRemota>();
-
+        cliente = new Cliente();
+        banco = new Banco();
     }
 
     public void criaCartao(){

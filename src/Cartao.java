@@ -1,16 +1,17 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Cartao {
 
     private String senha;
     private float limite;
     private LocalDate exp;
-    public TransacaoRemota transacoesRemotas;
+    public ArrayList<TransacaoRemota> transacoesRemotas;
     public Conta conta;
 
     public Cartao(){
 
-        transacoesRemotas = new TransacaoRemota();
+        transacoesRemotas = new ArrayList<TransacaoRemota>();
         conta = new Conta();
 
     }
